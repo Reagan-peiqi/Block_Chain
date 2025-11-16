@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>产品追溯信息</title>
+<style>
+    body {
+        margin: 0;
+        font-family: "Microsoft YaHei", sans-serif;
+        background: #f5f6fa;
+        color: #333;
+    }
+
+    .container {
+        width: 92%;
+        margin: 18px auto;
+    }
+
+    .title {
+        text-align: center;
+        font-size: 20px;
+        font-weight: 700;
+        margin-top: 8px;
+    }
+
+    .title span {
+        display: block;
+        width: 120px;
+        height: 3px;
+        background: #3a8bff;
+        border-radius: 3px;
+        margin: 6px auto 0 auto;
+    }
+
+    .card {
+        background: #fff;
+        border-radius: 12px;
+        padding: 18px;
+        margin-top: 16px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+        line-height: 1.9em;
+        font-size: 15px;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 14px;
+        margin-top: 22px;
+    }
+
+    .btn {
+        background: #fff;
+        padding: 16px;
+        border-radius: 12px;
+        text-align: center;
+        font-size: 15px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    }
+
+    .btn-icon {
+        width: 42px;
+        height: 42px;
+        border-radius: 50%;
+        margin: 0 auto 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 22px;
+        color: #fff;
+    }
+
+    .btn1 { background: linear-gradient(135deg, #ff978d, #ff6a6a); }
+    .btn2 { background: linear-gradient(135deg, #76e2b3, #46c990); }
+    .btn3 { background: linear-gradient(135deg, #7e8aff, #5d6bff); }
+    .btn4 { background: linear-gradient(135deg, #ffa2d9, #ff67b2); }
+
+    /* 底部导航 */
+    .bottom-nav {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 60px;
+        background: #fff;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        box-shadow: 0 -3px 10px rgba(0,0,0,0.06);
+        font-size: 13px;
+    }
+
+    .nav-item {
+        text-align: center;
+        color: #333;
+    }
+
+    .nav-item img {
+        width: 22px;
+        display: block;
+        margin: 0 auto 4px;
+    }
+</style>
+</head>
+
+<body>
+
+<div class="container">
+    <div class="title">
+        你现在在追溯的产品是
+        <span></span>
+    </div>
+
+    <div class="card">
+        产品名称：安化黑茶茯砖金花<br>
+        产品数量：1000饼<br>
+        出品企业：白沙溪茶厂有限公司<br>
+        产品含量：1000g/饼<br>
+        原料产地：湖南省益阳市安化县雪峰山脉北段<br>
+        追溯批号：2021072700003<br>
+        生产日期：2024-03-08<br>
+        已追溯次数：399
+    </div>
+
+    <div class="grid">
+        <div class="btn"><div class="btn-icon btn1">📄</div>企业简介</div>
+        <div class="btn"><div class="btn-icon btn2">🌿</div>基地信息</div>
+        <div class="btn"><div class="btn-icon btn3">⚙️</div>生产过程</div>
+        <div class="btn"><div class="btn-icon btn4">🛍</div>产品详情</div>
+    </div>
+</div>
+
+<!-- 底部导航 -->
+<div class="bottom-nav">
+    <div class="nav-item">✔ 验证真伪</div>
+    <div class="nav-item">🏠 首页</div>
+    <div class="nav-item">⬅ 返回</div>
+</div>
+
+</body>
+</html>
